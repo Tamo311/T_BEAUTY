@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/index.html_images/main.logo.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>T&BEAUTY</title>
+</head>
+<body>
+    <!--------header  created in JS -------->
+
+       <!-- ----------service dropdown list ------------>
+
+       <div id="service_dropdown" class="service_dropdown">
+        <ul class="service_dropdown_ul" id="service_dropdown_ul" >
+            <li> <a href="#services">Injections</a></li> 
+            <li> <a href="#services">Dermaplaning</a></li> 
+            <li> <a href="#services">Skin Surfacing</a></li> 
+            <li> <a href="#services">Tightening</a></li>
+            <li> <a href="#services">Micro-needling</a></li>
+            <li> <a href="#services">dermabrasion</a></li>
+        </ul>
+    </div>
+
+    <!-- --------------burger_menu service dropdown -->
+
+    <div id="BG_service_dropdown" class="BG_service_dropdown">
+        <ul class="BG_service_dropdown_ul" id="BG_service_dropdown_ul" >
+            <li> <a href="#services">Injections</a></li> 
+            <li> <a href="#services">Dermaplaning</a></li> 
+            <li> <a href="#services">Skin Surfacing</a></li> 
+            <li> <a href="#services">Tightening</a></li>
+            <li> <a href="#services">Micro-needling</a></li>
+            <li> <a href="#services">dermabrasion</a></li>
+        </ul>
+    </div>
+
+    <!------------- product dropdown list-------- -->
+
+        <div id="product_dropdown" class="product_dropdown">
+            <ul class="product_dropdown_ul" id="product_dropdown_ul">
+                <li> <a href="./Product_pages/Juvederm.html">Juvederm</a></li>
+                <li> <a href="./Product_pages/Dysport.html">Dysport</a></li>
+                <li> <a href="./Product_pages/Belkyra.html">Belkyra</a></li>
+                <li> <a href="./Product_pages/Botox.html">Botox</a></li>
+                <li> <a href="./Product_pages/Latisse.html">Latisse </a></li>
+            </ul>
+        </div>
+   <!-- -----------burger_menu product dropdown -->
+
+        <div id="BG_product_dropdown" class="BG_product_dropdown">
+            <ul class="BG_product_dropdown_ul" id="BG_product_dropdown_ul">
+                <li> <a href="./Product_pages/Juvederm.html">Juvederm</a></li>
+                <li> <a href="./Product_pages/Dysport.html">Dysport</a></li>
+                <li> <a href="./Product_pages/Belkyra.html">Belkyra</a></li>
+                <li> <a href="./Product_pages/Botox.html">Botox</a></li>
+                <li> <a href="./Product_pages/Latisse.html">Latisse </a></li>
+            </ul>
+        </div>
+
+    <!----------- form section----- -->
+ <div class="main">
+    
+    <div class="container">
+        <div id="main">
+            <aside id="aside">
+                <form  id="form" class="form">
+                    <label for="#age"> your age:<input type="number" id="age" required ></label>
+                    <label for="#select_skin">skin type: 
+                         <select name="skin_type" id="select_skin_type">
+                                <option label="  "></option>
+                                <option  value="normal">normal</option>
+                                <option  value="dry">dry</option>
+                                <option  value="oily">oily </option>
+                                <option  value="combination">combination</option>
+                         </select> 
+                    </label>
+                    <button id="submit" type="submit" class="submit"> <a id="link" class="link">learn more </a>   </button>
+                </form>
+            </aside>
+        </div>
+    </div>
+</div>
+
+<!--------------------------------- subscribe users -->
+
+<div class="container">
+    <section id="subscribe_div" class="user" >
+            <form action="" id="form_subscribe" class="form_subscribe">
+                <div class="wraper">
+                    <div class="user_wraper">
+                        <label for="#fname"> First name:  </label>
+                        <input type="text" id="fname" required >
+                    </div>
+                    <div class="user_wraper">
+                        <label for="#lname"> Last name:</label>
+                        <input type="text" id="lname" required > 
+                    </div>
+                    <div class="user_wraper">
+                        <label for="#age"> Your age:</label>
+                        <input type="number" id="User_age" required >
+                    </div>
+                    <div class="user_wraper">
+                        <label for="#email"> Email:</label>
+                        <input type="text" id="email" required >
+                    </div>
+               </div>
+                <div class="user_wraper">
+                    <label for="#text_area">Add comment:</label> 
+                    <textarea name="comment" id="text_area" cols="1" rows="1"></textarea>
+                </div>
+                    <button id="subscribe" type="submit" > subscribe </button>      
+            </form>
+    </section>
+</div>
+
+<!----------------- user information --------->
+ <div class="container">
+    <section id="section_user" class="section_user" >
+        <div id="user_info" class="user_info">
+            <h2 id="user_info_h2">NO INFORMATION</h2>
+            <div class=" user_info_h4">
+                <div class="user_h4">
+                    <h4> First name:</h4> 
+                    <p id="entered_fname"> </p>
+                </div> 
+               <div class="user_h4">
+                    <h4>Last name: </h4>
+                    <p id="entered_lname"> </p>
+                </div>
+                <div class="user_h4">
+                    <h4>Your age: </h4> 
+                    <p id="entered_age"></p>
+                </div>
+                <div class="user_h4">
+                    <h4>Email: </h4> 
+                    <p id="entered_email"></p>
+               </div>
+               <div class="comment">
+                    <h4>Your comment: </h4> 
+                    <p id="entered_Comment"> </p>
+               </div>
+            </div>
+          
+            <div class="user_btn">
+                <button type="reset" id="remove"> <a href="#" id="user_reset_btn"> remove </a> </button> 
+            </div> 
+        </div>
+    </section>
+ </div>
+
+     <!-------------- banner text ------------>
+    <div class="container">
+        <div class="banner_text">
+            <h1>FOLLOW YOUR DREAM WITH GLOW ON YOUR FACE</h1>
+        </div>
+    </div>
+
+     <!----------------------interier section slider -------------->
+
+     <div class="container">
+         <div class="interior">
+             <div class="interior_slider" id="interior_slider">
+                <div class="intorior_slider_slide">
+                    <img src="./images/index.html_images/interior_images/img2.jpg" alt="interior_img1">
+                     <div class="slide_text">
+                        <h2>A pleasant environment and high quality service are waiting for you... </h3>
+                    </div>
+               </div>
+                <div class="intorior_slider_slide">
+                    <img src="./images/index.html_images/interior_images/img7.jpg" alt="interior_img1">
+                     <div class="slide_text">
+                        <h2>A pleasant environment and high quality service are waiting for you... </h3>
+                    </div>
+                </div>
+                 <div class="intorior_slider_slide">
+                      <img src="./images/index.html_images/interior_images/img1.jpg" alt="interior_img1">
+                       <div class="slide_text">
+                          <h2>A pleasant environment and high quality service are waiting for you... </h3>
+                      </div>
+                 </div>
+               <div class="intorior_slider_slide">
+                <img src="./images/index.html_images/interior_images/img3.jpg" alt="interior_img1">
+                 <div class="slide_text">
+                    <h2>A pleasant environment and high quality service are waiting for you... </h3>
+                </div>
+           </div>
+           <div class="intorior_slider_slide">
+            <img src="./images/index.html_images/interior_images/img4.jpg" alt="interior_img1">
+             <div class="slide_text">
+                <h2>A pleasant environment and high quality service are waiting for you... </h3>
+            </div>
+       </div>
+       <div class="intorior_slider_slide">
+        <img src="./images/index.html_images/interior_images/img5.jpg" alt="interior_img1">
+         <div class="slide_text">
+            <h2>A pleasant environment and high quality service are waiting for you... </h3>
+        </div>
+   </div>
+   <div class="intorior_slider_slide">
+    <img src="./images/index.html_images/interior_images/img5 (2).jpg" alt="interior_img1">
+     <div class="slide_text">
+        <h2>A pleasant environment and high quality service are waiting for you... </h3>
+    </div>
+</div>
+<div class="intorior_slider_slide">
+    <img src="./images/index.html_images/interior_images/img6.jpg" alt="interior_img1">
+     <div class="slide_text">
+        <h2>A pleasant environment and high quality service are waiting for you... </h3>
+    </div>
+</div>         
+                 <button class="left arrow" id="left"><i class="fas fa-chevron-left"></i></button>
+                 <button class="right arrow" id="right"><i class="fas fa-chevron-right"></i></button>
+             </div>
+
+         </div>
+     </div>
+
+      <!------------- organic skin care section------ -->
+
+      <div class="container">
+        <div class="organic_section">
+               <div class="organic_content">
+                       <h2>EXCLUSIVE ORGANIC SKIN CARE</h2>
+                       <p>Environmental pollutants can wreak havoc on your health and your skin. To help, we’re introducing the <b>Microgreens Detox Collection </b>from the Eminence Organic Skin Care line, designed to combat the aging effects of free radical exposure and repair skin while helping shield it from further damage.</p>
+                       <p>By harnessing the potent antioxidants found in microgreens, this three-piece capsule collection features the new <b>Detoxifying Microgreens Complex</b>, formulated with Detoxophane – an active derived from Swiss cress sprouts that cleans and protects skin at the cellular level, to help counter the effects of pollution.</p>
+                       <h4>Benefits:</h4>
+                       <ul>
+                           <li>Detoxifying Microgreens Complex-derived naturally from potent microgreens with Detoxophane</li>
+                           <li>Protection from oxidative damage and the visible signs of aging</li>
+                           <li>Enhanced resistance against pollution and sun radiation</li>
+                           <li>Suitable for all skin types</li>
+                       </ul>
+               </div>
+               <div class="organic_img" id="organic_img">
+                   <img src="./images/index.html_images/organic_img.png" alt="organic_img">
+               </div>
+        </div>
+   </div>
+
+    <!------------- service section ------------->
+
+<div class="container">
+        <div class="services" id="services">
+            <div class="service_header" >
+                <h2>OUR SERVICES</h2>
+            </div>
+            <div class="service_content">
+                <div class="img">
+                    <img src="./images/index.html_images/service_images/injerction_img.jpg" alt="">
+                </div>
+                <div class="service_text">
+                    <h3>Cosmetic Injections</h3>
+                    <p> Smooth out moderate to severe facial lines, wrinkles and folds, 
+                        frown lines and fullness under the chin with these 3 different services,
+                         Botox, Juvaderm and Belkyra. 
+                          <span class="service_text_span"> Smooth out moderate to severe facial lines, wrinkles and folds, 
+                                frown lines and fullness under the chin with these 3 different services,
+                                Botox, Juvaderm and Belkyra. Smooth out moderate to severe facial lines, wrinkles and folds, 
+                                frown lines and fullness under the chin with these 3 different services,
+                                Botox, Juvaderm and Belkyra. <br>
+                                <b style="font-size: 15px;">price:</b> depends on skin condition and used product volume.
+                            </span>
+                    </p>
+                    <button class="service_text_btn">read more</button>
+                </div>
+            </div>
+            <div class="service_content">
+                <div class="img">
+                    <img src="./images/index.html_images/service_images/Dermaplaning Facial_img.jpg" alt="">
+                </div>
+                <div class="service_text">
+                    <h3>Dermaplaning Facial</h3>
+                    <p>A sharp tool carefully removes unwanted hair and dead skin cells leaving you feeling smooth,
+                         clean and ready for products.
+                          <span class="service_text_span"> Smooth out moderate to severe facial lines, wrinkles and folds, 
+                                frown lines and fullness under the chin with these 3 different services,
+                                Botox, Juvaderm and Belkyra. Smooth out moderate to severe facial lines, wrinkles and folds, 
+                                frown lines and fullness under the chin with these 3 different services,
+                                Botox, Juvaderm and Belkyra.<br>
+                                <b style="font-size: 15px;">price:</b> depends on skin condition and used product volume.
+                         </span> 
+                     </p>
+                    <button class="service_text_btn">read more</button>
+                </div>
+            </div>
+            <div class="service_content">
+                <div class="img">
+                    <img src="./images/index.html_images/service_images/Pixel Skin Surfacing_img.jpg" alt="">
+                </div>
+                <div class="service_text">
+                    <h3>Pixel Skin Surfacing</h3>
+                    <p> This safe, non-ablative fractional skin rejuvenation treatment delivers great results
+                         for mild to moderate skin wrinkling and skin discoloration. The Pixel can also shrink
+                          the appearance of pores and smooth out acne scars, giving you the soft and flawless 
+                          skin from your youth.
+                           <span class="service_text_span"> Smooth out moderate to severe facial lines, wrinkles and folds, 
+                                frown lines and fullness under the chin with these 3 different services,
+                                Botox, Juvaderm and Belkyra. Smooth out moderate to severe facial lines, wrinkles and folds, 
+                                frown lines and fullness under the chin with these 3 different services,
+                                Botox, Juvaderm and Belkyra.<br>
+                                <b style="font-size: 15px;">price:</b> depends on skin condition and used product volume.
+                            </span> 
+                    </p>
+                    <button class="service_text_btn">read more</button>
+                </div>
+            </div>
+            <div class="service_content">
+                <div class="img">
+                    <img src="./images/index.html_images/service_images/skin_tightening_img.jpg" alt="">
+                </div>
+                <div class="service_text">
+                    <h3>Facial Skin Tightening</h3>
+                    <p> Our facial skin tightening service of Ultherapy, uses safe,
+                         time-tested ultrasound energy to lift and tighten the skin naturally—without 
+                         surgery or downtime.
+                          <span class="service_text_span"> Smooth out moderate to severe facial lines, wrinkles and folds, 
+                                frown lines and fullness under the chin with these 3 different services,
+                                Botox, Juvaderm and Belkyra. Smooth out moderate to severe facial lines, wrinkles and folds, 
+                                frown lines and fullness under the chin with these 3 different services,
+                                Botox, Juvaderm and Belkyra.<br>
+                                <b style="font-size: 15px;">price:</b> depends on skin condition and used product volume.
+                          </span>
+                    </p>
+                    <button class="service_text_btn">read more</button>
+                </div>
+            </div>
+            <div class="service_content">
+                <div class="img">
+                    <img src="./images/index.html_images/service_images/Dermal Micro-needling_img.jpg" alt="">
+                </div>
+                <div class="service_text">
+                    <h3>Dermal Micro-needling</h3>
+                    <p> Promote skin repair and reduce the appearance of wrinkles, scars, stretch marks.
+                        <span class="service_text_span"> Smooth out moderate to severe facial lines, wrinkles and folds, 
+                                frown lines and fullness under the chin with these 3 different services,
+                                Botox, Juvaderm and Belkyra. Smooth out moderate to severe facial lines, wrinkles and folds, 
+                                frown lines and fullness under the chin with these 3 different services,
+                                Botox, Juvaderm and Belkyra.<br>
+                                <b style="font-size: 15px;">price:</b> depends on skin condition and used product volume.
+                        </span>
+                     </p>
+                    <button class="service_text_btn">read more</button>
+                </div>
+            </div>
+            <div class="service_content">
+                <div class="img">
+                    <img src="./images/index.html_images/service_images/Microdermabrasion_img.jpg" alt="">
+                </div>
+                <div class="service_text">
+                    <h3>Microdermabrasion</h3>
+                    <p> Our microdermabrasion services all exfoliate and infuse customized skin 
+                        solutions into the skin to improve overall skin health.
+                        <span class="service_text_span"> Smooth out moderate to severe facial lines, wrinkles and folds, 
+                                frown lines and fullness under the chin with these 3 different services,
+                                Botox, Juvaderm and Belkyra. Smooth out moderate to severe facial lines, wrinkles and folds, 
+                                frown lines and fullness under the chin with these 3 different services,
+                                Botox, Juvaderm and Belkyra.<br>
+                                <b style="font-size: 15px;">price:</b> depends on skin condition and used product volume.
+                        </span>
+                     </p>
+                    <button class="service_text_btn">read more</button>
+                </div>
+            </div>
+        </div>
+</div>
+
+     <!---------------- product section --------------->
+
+     <div class="container">
+         <div class="products" id="products">
+            <div class="product_header">
+                <h2>OUR PRODUCTS</h2>
+             </div>
+            <div class="product_section">
+                <div class="product_content">
+                    <div class="product_img">
+                        <img src="./images/index.html_images/product_img/juvederm_img.jpg" alt="jeuvederm">
+                    </div>
+                    <h2> JUVEDERM </h2>
+                    <p> Juvederm is an injectable gel that will smooth out moderate to severe facial lines, wrinkles and folds.</p>
+                    <button class="product_button"><a href="./Product_pages/Juvederm.html">learn more</a> </button>
+                </div>
+                <div class="product_content">
+                    <div class="product_img">
+                        <img src="./images/index.html_images/product_img/dysport_img.jpg" alt="dysport">
+                    </div>
+                    <h2> DYSPORT </h2>
+                    <p>For adults who want a natural look, Dysport is a natural-looking, fast-acting, long-lasting prescription injection </p>
+                    <button class="product_button"><a href="./Product_pages/Dysport.html">learn more</a> </button>
+                </div>
+                <div class="product_content">
+                    <div class="product_img">
+                        <img src="./images/index.html_images/product_img/botox_img.jpg" alt="botox">
+                    </div>
+                    <h2> BOTOX </h2>
+                    <p> Botox @ Cosmetic will reduce & smooth frown lines between the brows, forehead lines & much more!</p>
+                    <button class="product_button"><a href="./Product_pages/Botox.html">learn more</a> </button>
+                </div>
+                <div class="product_content">
+                    <div class="product_img">
+                        <img src="./images/index.html_images/product_img/Belkyra.img.jpg" alt="belkyra">
+                    </div>
+                    <h2> BELKYRA </h2>
+                    <p> Belkyra™ is a injectable treatment for the improvement of the appearance of fullness in the area under the chin.</p>
+                    <button class="product_button"><a href="./Product_pages/Belkyra.html">learn more </a> </button>
+                </div>
+                <div class="product_content">
+                    <div class="product_img">
+                        <img src="./images/index.html_images/product_img/Latisse.img.jpg" alt="latisse">
+                    </div>
+                    <h2> LATISSE </h2>
+                    <p> Latisse® is a prescription solution used to treat hypotrichosis by increasing their growth including darkness.</p>
+                    <button class="product_button"><a href="./Product_pages/Latisse.html"> learn more</a> </button>
+                </div>
+            </div>
+         </div>  
+     </div>
+
+      <!-- ---------------------TEAM  section --------------->
+     
+      <div class="container">
+          <div class="team" id="team">
+            <div class="team_header">
+                <h2>OUR TEAM</h2>
+             </div>
+           <div class="team_section">
+                   <div class="member">
+                    <div class="member_BG"></div>
+                        <div class="member_content">
+                            <div class="member_img">
+                                <img src="./images/index.html_images/team.images/team.img1.jpg" alt="">
+                            </div>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="member_info">
+                            <h4>Laura Kumar</h4>
+                            <span> Founder & Ceo</span>
+                        </div>
+                   </div>
+                   <div class="member">
+                    <div class="member_BG"></div>
+                        <div class="member_content">
+                            <div class="member_img">
+                                <img src="./images/index.html_images/team.images/team.img2.jpg" alt="">
+                            </div>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="member_info">
+                            <h4>Ann Smith</h4>
+                            <span> Dermatologist</span>
+                        </div>
+                   </div>
+                   <div class="member">
+                    <div class="member_BG"></div>
+                        <div class="member_content">
+                            <div class="member_img">
+                                <img src="./images/index.html_images/team.images/team.img5.jpg" alt="">
+                            </div>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="member_info">
+                            <h4>Fred Morrison</h4>
+                            <span>Cosmetic Surgeon</span>
+                        </div>
+                   </div>
+                   <div class="member">
+                    <div class="member_BG"></div>
+                        <div class="member_content">
+                            <div class="member_img">
+                                <img src="./images/index.html_images/team.images/team.img3.jpg" alt="">
+                            </div>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="member_info">
+                            <h4>Alex Grinfield</h4>
+                            <span>Cosmetic Surgeon</span>
+                        </div>
+                   </div>
+                   <div class="member">
+                    <div class="member_BG"></div>
+                        <div class="member_content">
+                            <div class="member_img">
+                                <img src="./images/index.html_images/team.images/team.img4.jpg" alt="">
+                            </div>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="member_info">
+                            <h4>Jane Richmond</h4>
+                            <span> Lazer Therapist</span>
+                        </div>
+                   </div>
+                   <div class="member">
+                    <div class="member_BG"></div>
+                        <div class="member_content">
+                            <div class="member_img">
+                                <img src="./images/index.html_images/team.images/team.img6.jpg" alt="">
+                            </div>
+                            <div class="social-links">
+                                <a  href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a  href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a  href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a  href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="member_info">
+                            <h4>Roxie Swanson</h4>
+                            <span> Cosmetologist</span>
+                        </div>
+                   </div>
+           </div>
+          </div>
+
+      </div>
+
+      <!----------------------- customer  review section---------- -->
+
+      <div class="container">
+            <div class="review_header">
+                <h2>REVIEWS</h2>
+            </div>
+     <!-- -----------customer review slider -->
+     <div class="review" id="review">
+        <div class="review_slider" id="slider">
+                <div class="slide">
+                    <div class="review_img">
+                        <img src="./images/index.html_images/slider_img.png" alt="">
+                   </div>
+                    <div class="slider_content">
+                            <h5 class="slide_header"> Our customers opinions and advicies</h5>
+                            <p class="slider__text">
+                                'The face wash arrived quickly, was well-packaged, and seems to work wonders.
+                                 It doesn't leave my face feeling oily or stripped.
+                                 Some face washes leave a weird residue behind but not this one! Hannah, USA
+                            </p>
+                            <address class="author">
+                                <h6 class="author_name"> Aarav Lynn, 37 years </h6>
+                                <p class="date"> 26.12.2021 </p>
+                            </address>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review_img">
+                        <img src="./images/index.html_images/slider_img.png" alt="">
+                   </div>
+                    <div class="slider_content">
+                            <h5 class="slide_header"> Our customers opinions and advicies</h5>
+                            <p class="slider__text">
+                                'I'm delighted with my purchase! The products smell incredible and the bag is beautifully made.
+                                 A gift with a conscience - working project it comes from. 
+                                I will definitely choose you again.' Amy, England
+                            </p>
+                            <address class="author">
+                                <h6 class="author_name"> Linda Roberts, 44 years </h6>
+                                <p class="date"> 17.01.2022 </p>
+                            </address>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review_img">
+                        <img src="./images/index.html_images/slider_img.png" alt="">
+                   </div>
+                    <div class="slider_content">
+                            <h5 class="slide_header">Our customers opinions and advicies</h5>
+                            <p class="slider__text">
+                                'Amazing as always. I have been using Conscious Skincare for over
+                                 a year now (my mom as well!) 
+                                and all of the products are incredibly good to my skin. 
+                                Highly recommended!' Dori, Germany
+                            </p>
+                            <address class="author">
+                                <h6 class="author_name"> Ann Hopkins, 31 years</h6>
+                                <p class="date"> 30.01.2022 </p>
+                            </address>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review_img">
+                        <img src="./images/index.html_images/slider_img.png" alt="">
+                   </div>
+                    <div class="slider_content">
+                            <h5 class="slide_header">Our customers opinions and advicies</h5>
+                            <p class="slider__text">
+                                'One of the best organic creams I found so far, there's a small team 
+                                including my mom and best friend, using Rebecca's
+                                 products! Great service as well, thank you! Dori, Hungary
+                            </p>
+                            <address class="author">
+                                <h6 class="author_name"> Alice Rhuode, 29 years</h6>
+                                <p class="date"> 25.01.2022 </p>
+                            </address>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review_img">
+                        <img src="./images/index.html_images/slider_img.png" alt="">
+                   </div>
+                    <div class="slider_content">
+                            <h5 class="slide_header">Our customers opinions and advicies</h5>
+                            <p class="slider__text">
+                                'Hi, just wanted to say how pleased I am with my products, they are 
+                                absolutely lovely and feel beautiful on my skin. 
+                                Thank you, regards.' Sarah, Englandy
+                            </p>
+                            <address class="author">
+                                <h6 class="author_name"> Hellen Bush, 47 years</h6>
+                                <p class="date"> 23.11.2021 </p>
+                            </address>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="review_img">
+                        <img src="./images/index.html_images/slider_img.png" alt="">
+                   </div>
+                    <div class="slider_content">
+                            <h5 class="slide_header">Our customers opinions and advicies</h5>
+                            <p class="slider__text">
+                                'This is REALLY helpful!! It's definitely gotten rid of a lot of the redness and 
+                                my acne seems to be going away pretty quickly! It also makes my skin really 
+                                nice and soft and smooth. Thank you very much!' Chantal, USA
+                            </p>
+                            <address class="author">
+                                <h6 class="author_name"> Miranda Jhones, 34 years</h6>
+                                <p class="date"> 30.01.2022 </p>
+                            </address>
+                    </div>
+                </div>
+        </div>
+            <button class="slider__btn slider__btn--left" id="slider_btn_left" >  &larr;  </button>
+            <button class="slider__btn slider__btn--right" id="slider_btn_right"> &rarr; </button>   
+    </div>
+ </div>
+     
+   
+    <!--------------------- FAQ section----------- -->
+
+    <div class="container">
+        <div id="FAQ_div" class="FAQ_div">
+            <div class="FAQ_header">
+                <h2>FAQ</h2>
+             </div>
+            <div class="FAQ" id="FAQ">
+                   <button class="accordion" >How do I choose the right treatments and products?</button>  
+                    <div class="panel">
+                        <p>We offer complimentary consultations, and can make recommendations to fit your wants and needs. Whether you are looking for a skin care product line to use at home, or have specific needs for a salon or spa treatment, we are always available to answer your questions. </p>
+                    </div>
+                    <button class="accordion"> Can I wear makeup during my facial or body treatment?</button> 
+                    <div class="panel">
+                        <p> During facials, your esthetician will remove your make-up for you. If you are scheduled for a body treatment and would like to remove your makeup beforehand, we will provide you with Aveda make-up removal products. We now carry the Aveda Make-up line and offer a free make-up touch up after any service!</p>
+                    </div>
+                   <button class="accordion"> What methods of payment do you accept?</button> 
+                    <div class="panel">
+                        <p>Cash, checks (local only), Visa, Mastercard, American Express, Discover, and I Am Salon Gift Cards. WE ARE NO LONGER A PARTICIPATING SALON FOR SPAFINDER OR SPA WISH AND WILL NO LONGER BE ACCEPTING GIFT CARDS FROM THEM. Sorry for any inconvenience.</p>
+                    </div>
+            </div> 
+            <div class="poster" id="poster"> 
+                <h2 id="poster_h2"> LOOK LIKE YOU <span class="poster_span">DESIRE</span>, <br> CHANGE THE WORLD WITH <span class="poster_span"> YOUR SHINE</span> ... </h2>
+            </div> 
+           
+        </div>
+           
+    </div>
+
+    <!------------- contact section--------- -->
+
+   
+    <div class="contact" id="contact">
+            <div class="container">
+                <div class="contact_section">
+                    <div class="contact_info">
+                        <h2> CONTACT INFO</h2>
+                        <h5><i class="fas fa-phone-alt"></i>1 306 961 8064</h5> 
+                        <h5><i class="fas fa-envelope"></i>T&B.info@gmail.com</h5>
+                        <h5><i class="fas fa-clock"></i>Mon/Sat 10:00_20:00  </h5> 
+                        <h5><i class="fas fa-clock"></i>By appointment only Saturday</h5> 
+                        <h5><i class="fas fa-map-marker-alt"></i>#2 2901 2nd Ave West,Prince Albert,Canada</h5>   
+                    </div>
+                    <div class="location">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2045.2069609893665!2d-105.76286768462167!3d53.18656819436879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53017aed90258f83%3A0x95d7d614f75954d1!2s2901%202%20Ave%20W%20%232%2C%20Prince%20Albert%2C%20SK%20S6V%207R2%2C%20Canada!5e1!3m2!1sen!2sge!4v1642878180292!5m2!1sen!2sge" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+           </div>
+          
+    </div>
+    <!--=-----------back to top button---------- -->
+   
+    <a href="#" class="backToTop" id="backToTop"><i class="fas fa-angle-double-up"></i></a>
+
+    
+    
+    <!-- -----------------footer--------------- -->
+
+  <footer>
+      <div class="container">
+        <div class="social"> 
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-github "></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+              <div class="footer"> T&BEAUTY © 2021 All Rights Reserved. </div>
+      </div>
+  </footer>
+
+
+     <script src="./JS/index.js/main.js"> </script>
+     <script src="./JS/index.js/SelectSkinType_localStorage.js"></script>
+     <script src="./JS/index.js/user_localStorage.js"></script>
+
+     
+</body>
+</html>
