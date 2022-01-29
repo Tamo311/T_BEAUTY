@@ -180,7 +180,7 @@ header img{
 img{
     -webkit-transition-duration: 2000ms;
     -o-transition-duration: 2000ms;
-       transition-duration: 2000ms;
+    transition-duration: 2000ms;
 }
 @-webkit-keyframes img_animation{
     from{width: 60px; height: 60px;}
