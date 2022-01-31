@@ -1815,6 +1815,11 @@ label{
     margin-top: 50px;
 }
  }
+ @media only screen and (max-width:800px){
+    .container{
+        max-width: 720px ;
+    } 
+ }
 @media only screen and (max-width:700px){
     .container{
     max-width: 600px ;
