@@ -176,6 +176,9 @@ input, textarea{
     .nav{
         margin-left: 100px;
     }
+    .form_subscribe, .user_info{
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
 }
 @media only screen and (max-width:576px){
     .container{
@@ -291,9 +294,6 @@ input, textarea{
       .slider, .visitDR, .Causes{
         width: 100%;
       }
-      .user_info{
-          width: 95%;
-      }
     .footer{
        padding: 15px 0;
     }
@@ -308,10 +308,6 @@ input, textarea{
     .switch_soc{
         margin-left: 45px;
     } 
-    .user_info{
-        width: 100%;
-        right: 15px;
-    }
 }
 @media only screen and (max-width:320px){
     .container{
