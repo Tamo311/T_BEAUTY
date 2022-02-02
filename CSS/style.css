@@ -2090,20 +2090,20 @@ header .social{
     .user_wraper{
         width: 100%;
     }
-     .form_subscribe{
-         width: 80%;
-        right: 40px;
-     }
-     .switch_submit_a{
-        color: rgb(248, 237, 226); 
-    }
-    .user_info{
-        width: 90%;
-        right: 25px;
-        background-color:rgba(66, 64, 64, 0.699) ;
+       .user_info{
+        width: 100%;
+        right: 0;
+         background-color:rgba(66, 64, 64, 0.699) ;
         -webkit-transition: .5s;
         -o-transition: .5s;
         transition: .5s;
+    }
+    .form_subscribe{
+        width: 100%;
+       right: 0px;
+    }
+     .switch_submit_a{
+        color: rgb(248, 237, 226); 
     }
     button:hover{
         letter-spacing: 2px;
@@ -2245,14 +2245,6 @@ header .social{
     }
     label{
         margin-top: 15px;
-    }
-    .user_info{
-        width: 100%;
-        right: 0;
-    }
-    .form_subscribe{
-        width: 100%;
-       right: 0px;
     }
     .submit{
         margin-top: 10px;
